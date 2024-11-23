@@ -11,6 +11,15 @@
 
 function continueGame(){
 //step-1 generate a random alphabet
+const alphabet = getRandomAlphabet();
+console.log('Your Random alphabet', alphabet);
+
+//randomly generated alphabet to the screen(show it)
+const currentAlphabetElement = document.getElementById('current-alphabet');
+currentAlphabetElement.innerText = alphabet;
+
+//set background color
+setBackgroundColorById(alphabet);
 
 }
 
